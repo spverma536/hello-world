@@ -1,21 +1,21 @@
 #include <stdio.h> 
 #include <string.h> 
   
-void isPalindrome(char str[]) 
+void isPalindrome(char st[]) 
 { 
 
     int l = 0; 
-    int h = strlen(str) - 1; 
+    int h = strlen(st) - 1; 
   
   while (h > l) 
     { 
-        if (str[l++] != str[h--]) 
+        if (st[l++] != st[h--]) 
         { 
-            printf("%s is Not Palindrome", str); 
+            printf("%s is Not Palindrome", st); 
             return; 
         } 
     } 
-    printf("%s is palindrome", str); 
+    printf("%s is palindrome", st); 
 } 
   
 
